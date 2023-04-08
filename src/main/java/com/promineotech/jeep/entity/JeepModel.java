@@ -14,5 +14,5 @@ public enum JeepModel {
   RENEGADE,
   WRANGLER,
   GLADIATOR,
-  WRANGER_4XE
+  WRANGLER_4XE
 }
