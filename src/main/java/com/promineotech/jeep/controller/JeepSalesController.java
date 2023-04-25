@@ -31,7 +31,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
 
 @Validated
 @RequestMapping("/jeeps")
-@OpenAPIDefinition(info = @Info(title = "Jeep Sales Service"),
+@OpenAPIDefinition(info = @Info(title = "Jeep API Service"),
     servers = {@Server(url = "http://localhost:8080", description = "Local server.")})
 public interface JeepSalesController {
   
@@ -39,7 +39,7 @@ public interface JeepSalesController {
   // @formatter:off
   @Operation(
       summary = "Returns a list of Jeeps", 
-      description = "Returns a lsit of Jeeps given an optional model and/or trim",
+      description = "Returns a list of Jeeps given an optional model and/or trim",
       responses = {
           @ApiResponse(
               responseCode = "200", 

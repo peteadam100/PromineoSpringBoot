@@ -6,7 +6,8 @@ INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('KAPPEL
 INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('FOSTER_BUSINGE', 'Businge', 'Foster', '399.377.3854');
 INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('IGNATOV_GISELLA', 'Gisella', 'Ignatov', NULL);
 INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('STERN_TORO', 'Torø', 'Stern', '647.399.2610');
-INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('HUANG_KESTAS', 'Kęstas', 'Huang', '219.355.6407');
+-- INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('HUANG_KESTAS', 'Kęstas', 'Huang', '219.355.6407');
+INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('HUANG_KESTAS', 'Kestas', 'Huang', '219.355.6407');
 INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('OTXOA_GISBERT', 'Gisbert', 'Otxoa', '766.388.3663');
 INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('MORISON_LINA', 'Lina', 'Morison', '635,968.2611');
 INSERT INTO customers (customer_id, first_name, last_name, phone) VALUES('CSASZAR_IRENE', 'Irene', 'Császár', NULL);
@@ -171,7 +172,7 @@ INSERT INTO tires (tire_id, tire_size, manufacturer, price, warranty_miles) VALU
 INSERT INTO tires (tire_id, tire_size, manufacturer, price, warranty_miles) VALUES('37_COOPER', '37X13.50R17LT 121Q - Discoverer STT Pro All-Season Tire', 'Cooper', 1363.96, 30000);
 INSERT INTO tires (tire_id, tire_size, manufacturer, price, warranty_miles) VALUES('37_YOKOHAMA', '37X12.50R17 124Q 8-ply - Geolandar MT G003 All Season Radial Tire', 'Yokohama', 1335.96, 40000);
 
--- Options
+-- Options 
 INSERT INTO options(option_id, category, manufacturer, name, price) VALUES('DOOR_MOPAR_REINFORCE', 'DOOR', 'Mopar', 'Hinge-Gate Reinforcement', 675.00);
 INSERT INTO options(option_id, category, manufacturer, name, price) VALUES('DOOR_BESTOP_ELEMENT_MIRROR', 'DOOR', 'Bestop', 'HighRock 4x4 Element Doors & Mirrors', 489.95);
 INSERT INTO options(option_id, category, manufacturer, name, price) VALUES('DOOR_QUAD_4', 'DOOR', 'Quadratec', 'Tube Doors Front & Rear 4-Door', 679.99);

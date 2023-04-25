@@ -1,3 +1,4 @@
+
 /**
  * 
  */
@@ -64,7 +65,7 @@ class FetchJeepTest extends FetchJeepTestSupport {
       // Given: a valid model, trim, and URI
       JeepModel model = JeepModel.WRANGLER;
       String trim = "Sport";
-      String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+      String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
 
       // When: a connection is made to the URI
       ResponseEntity<List<Jeep>> response = getRestTemplate().exchange(uri, HttpMethod.GET, null,
@@ -93,7 +94,7 @@ class FetchJeepTest extends FetchJeepTestSupport {
       // Given: a valid model, trim, and URI
       JeepModel model = JeepModel.WRANGLER;
       String trim = "Unknown Value";
-      String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+      String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
 
       // When: a connection is made to the URI
       ResponseEntity<Map<String, Object>> response = getRestTemplate().exchange(uri, HttpMethod.GET,
@@ -113,7 +114,7 @@ class FetchJeepTest extends FetchJeepTestSupport {
     void test_that_an_error_message_is_returned_when_an_invalid_value_is_supplied(String model,
         String trim, String reason) {
       // Given: a valid model, trim, and URI
-      String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+      String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
 
       // When: a connection is made to the URI
       ResponseEntity<Map<String, Object>> response = getRestTemplate().exchange(uri, HttpMethod.GET,
@@ -161,7 +162,7 @@ class FetchJeepTest extends FetchJeepTestSupport {
       // Given: a valid model, trim, and URI
       JeepModel model = JeepModel.WRANGLER;
       String trim = "Invalid Trim";
-      String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+      String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
       
       // Force some kind of error just to throw an internal server error (500)
       doThrow(new RuntimeException("Ouch")).when(jeepSalesService).fetchJeeps(model, trim);
